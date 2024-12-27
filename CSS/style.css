@@ -22,6 +22,8 @@ nav{
     justify-content: space-between;
     background-color: #548B54;
     padding: 5px;
+    position: sticky;
+    top: 0;
 }
 .nav-options{
     display: flex;
@@ -188,6 +190,12 @@ textarea::placeholder{
     background-color: #548B54;
     color: black;
     font-weight: bold;
+}
+
+
+/* #########Timeline Post ######### */
+.time-line{
+    background-color: red;
 }
 
 
