@@ -54,10 +54,12 @@ li:hover{
 
 }
 .user-profile img{
+    cursor: pointer;
     border-radius: 50%;
     border: 4px solid blue;
 }
 .user-profile label{
+    cursor: pointer;
     font-size: 15px;
 }
 
@@ -84,7 +86,8 @@ form{
     gap: 25px;
 }
 textarea{
-    width: 100%;
+    margin-left: 5px;
+    width: 98%;
     height: 100%;
     font-size: 20px;
     border: 5px solid black;
@@ -132,74 +135,60 @@ textarea::placeholder{
 }
 
 /* ####### Add and Follow People ###### */
+.people-div{
+    display: flex;
+    margin: 5px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.people-div h4{
+    margin-left: 5px;
+    color: #548B54;
+    text-align: center;
+}
 
 .profile-slide{
+    max-height: 110px;
     display: flex;
-    overflow: scroll;
+    overflow: auto;
     white-space: nowrap;
-    gap: 12%;
+    gap: 10px;
+    padding-top: 10px;
+    /* background-color: red; */
 }
-.profile-slide img{
-    height: 20px;
-    width: 20px;
+.profile-slide::-webkit-scrollbar{
+    width: 0;
+}
+.profile-slide .slide-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 90px;
+    height: 90px;
+    background-color: #548B54;
+}
+.profile-slide .slide-item img{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.profile-slide .slide-item button{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: #548B54;
+}
+.profile-slide .slide-item button:hover{
+    background-color: #548B54;
+    color: black;
+    font-weight: bold;
+}
 
-}
-.div-1{
 
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-
-}
-.div-2{
-
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-}
-.div-3{
-
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-}
-.div-4{
-    background-color: red;
-    border: 2px solid black;
-
-    width: 100px;
-    height: 100px;
-}
-.div-5{
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-}
-.div-6{
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-}
-.div-7{
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-}
-.div-8{
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-}
-.div-9{
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-}
-.div-10{
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-}
 
 
 
