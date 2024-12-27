@@ -195,7 +195,63 @@ textarea::placeholder{
 
 /* #########Timeline Post ######### */
 .time-line{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #548B54;
+    gap: 10px;
+}
+.user-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.fa-solid, .fa-brands{
+    cursor: pointer;
+    color: #548B54;
+}
+.fa-ellipsis-vertical:hover{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.post-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #548B54;
+}
+.post-info img{
+    cursor: pointer;
+    width: 50px;
+    left: 50px;
+    border-radius: 50%;
+}
+.post-info h4{
+    cursor: pointer;
+}
+.user-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #548B54;
+    background-color: #DCDCDC;
+    height: 150px;
+}
+.inter-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.inter-btn button{
+    cursor: pointer;
+    width: 100%;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid #548B54;
+    color: #548B54;
+}
+.inter-btn button:hover{
+    background-color: black;
 }
 
 
