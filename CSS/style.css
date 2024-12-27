@@ -143,6 +143,8 @@ textarea::placeholder{
     align-items: center;
 }
 .people-div h4{
+    margin: 0;
+    padding: 0;
     margin-left: 5px;
     color: #548B54;
     text-align: center;
