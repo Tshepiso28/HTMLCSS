@@ -5,13 +5,7 @@
     font-optical-sizing: auto;
     margin: 0;
 }
-.main-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-}
+
 form{
     display: flex;
     flex-direction: column;
@@ -29,4 +23,5 @@ form img{
     background-color: blue;
     width: 80%;
     height: 80%;
+    padding: 5%;
 }
