@@ -210,6 +210,9 @@ textarea::placeholder{
     cursor: pointer;
     color: #548B54;
 }
+.fa-plus{
+    color: black;
+}
 .fa-ellipsis-vertical:hover{
     font-weight: bolder;
     font-size: 20px;
