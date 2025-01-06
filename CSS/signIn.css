@@ -5,13 +5,21 @@
     font-optical-sizing: auto;
     margin: 0;
 }
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+} */
 
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #548B54;
+    margin: 10%;
+    height: 100%;
+    
 }
 form img{
     height: 80px;
@@ -20,8 +28,82 @@ form img{
 .form-content{
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: #548B54;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    gap: 20px;
+    padding: 50px;
+    box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+.form-content input{
+    height: 25px;
+    width: 100%;
+}
+.form-content button{
+    cursor: pointer;
+    height: 30px;
+    width: 120px;
+}
+.form-content label{
+    font-size: 20px;
+
+}
+.form-info{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
     width: 80%;
-    height: 80%;
-    padding: 5%;
+    gap: 10px;
+}
+.forgotPass{
+    display: flex;
+    justify-content: end;
+}
+.forgotPass a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.forgotPass a:hover{
+    font-weight: bold;
+}
+.logBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logBtn a{
+    text-decoration: none;
+    color: black;
+}
+.logBtn button{
+    background-color: white;
+    color: #548B54;
+    border: 1px solid #548B54;
+    border-radius: 10px;
+
+}
+.logBtn button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.dontAcc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dontAcc a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.dontAcc a:hover{
+    font-weight: bold;
 }

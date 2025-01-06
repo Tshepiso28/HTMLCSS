@@ -10,21 +10,25 @@
 </head>
 <body>
         <form>
-            <div>
-                <img src="/RESOURCES/image.png" alt="logo">
-            </div>
             <div class="form-content">
-                <label for="txtUserName">Email/Username</label>
-                <input type="text" id="txtUserName">
-                <label for="txtPass">Password</label>
-                <input type="text" id="txtPass">
-                <a href="#">forgot password?</a>
-                <button>Sign In</button>
-                <p>Don't have an account? <a href="/HTML/signUp.html">Sign Up</a></p>
+                <img src="/RESOURCES/image.png" alt="logo">
+                <h2>Sign-In</h2>
+                <div class="form-info">
+                    <label for="txtUserName">Email/Username</label>
+                    <input type="text" id="txtUserName" placeholder="Enter Your UserName">
+                    <label for="txtPass">Password</label>
+                    <input type="text" id="txtPass" placeholder="Enter Your Password">
+                    <div class="forgotPass">
+                        <label for=" "><a href=""><i>forgot password</i></a></label>
+                    </div>
+                    <div class="logBtn">
+                        <button><a href="/HTML/notFacebook.html">Sign In </a></button>
+                    </div>
+                    <div class="dontAcc">
+                        <p>Don't have an account? <a href="/HTML/signUp.html"><i>Sign Up</i></a></p>
+                    </div>
+                </div>
             </div>
-
-
         </form>
-    
 </body>
 </html>
