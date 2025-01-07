@@ -20,10 +20,9 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #63548b;
+    background-color: #548B54;
     padding: 5px;
     position: sticky;
-
     top: 0;
     width: 100%;
     box-sizing: border-box;
@@ -42,6 +41,7 @@ nav {
 nav img {
     width: 50px;
     height: 50px;
+    padding-left: 10px;
 }
 
 ul {
@@ -66,7 +66,8 @@ li:hover {
 .user-profile img {
     cursor: pointer;
     border-radius: 50%;
-    border: 4px solid blue;
+    padding-right: 10px;
+  
 }
 
 .user-profile label {
@@ -86,6 +87,13 @@ li:hover {
         flex-direction: column;
         align-items: center;
     }
+    .nav-options img {
+        width: 50px;
+        height: 50px;
+        padding-right: 10px;
+        padding-top: 20px;
+
+    }
 
     ul {
         display: flex;
@@ -104,9 +112,11 @@ li:hover {
     .user-profile {
         margin-top: 10px;
         align-items: center;
+        display: block;
     }
 
     .user-profile img {
+        display: none;
         width: 35px;
         height: 35px;
     }
@@ -137,6 +147,12 @@ li:hover {
     .user-profile img {
         width: 30px;
         height: 30px;
+        display: none;
+    }
+    .user-profile label {
+        width: 30px;
+        height: 30px;
+        display: none;
     }
 }
 
@@ -148,73 +164,54 @@ li:hover {
 
 /* ############# Create Post ########### */
 
-.post-div{
-    display: flex;
+.post{
+    display:flex;
     flex-direction: column;
-    background-color: white;
-    height: 350px;
+    gap: 10px;
+    margin: 10px;
+    border: 1px solid #548B54;
+    padding-bottom: 10px;
+}
+.writePost{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+.writePost img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+.writePost input{
+    width: 100%;
+    margin-right: 50px;
+    border: none;
+    border-bottom: 1px solid #548B54;
+}
+.postBtn{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
     gap: 10px;
 }
-.post-div h1{
-    color: black;
-    padding-left: 5px;
-}
-input[type="file"] {
+.postBtn input[type=file]{
     display: none;
-  }
-form{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 25px;
 }
-textarea{
-    margin-left: 5px;
-    width: 98%;
-    height: 100%;
-    font-size: 20px;
-    border: 5px solid black;
-}
-textarea::placeholder{
-    color: darkgreen;
-    padding: 5px;
-    opacity: 50%;
-}
-.post-btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-}
-.imgload{
+.postBtn button{
     cursor: pointer;
-    border: 2px solid black;
+    background-color: white;
+    color: #548B54;
+    border: 1px solid #548B54;
     border-radius: 10px;
-    width: 100px;
-    text-align: center;
 }
-.imgload:hover{
+.postBtn button:hover{
     background-color: #548B54;
-    border: 2px solid #548B54;
+    color: white;
+    border: 1px solid #548B54;
     border-radius: 10px;
-    width: 100px;
-    text-align: center;
-    font-weight: bold;
-}
-#btnPost{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid  black;
-    border-radius: 10px;
-    width: 100px;
-}
-#btnPost:hover{
-    background-color: #548B54;
-    border: 2px solid #548B54;
-    border-radius: 10px;
-    width: 100px;
-    text-align: center;
-    font-weight: bold;
 }
 
 /* ####### Add and Follow People ###### */
