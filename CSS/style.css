@@ -146,55 +146,6 @@ li:hover {
     gap: 30px;
 }
 
-/* nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: #63548b;
-    padding: 5px;
-    position: sticky;
-
-    top: 0;
-}
-.nav-options{
-    display: flex;
-    align-items: center;
-}
-.nav-options a{
-    text-decoration: none;
-    color: black;
-}
-nav img{
-    width: 50px;
-    height: 50px;
-}
-ul{
-    display: flex;
-    list-style: none;
-    gap: 15px;
-}
-li:hover{
-    cursor: pointer;
-    /* font-weight: bold; */
-    border-bottom: 2px solid green;
-    transform: border-bottom .9s;
-}
-.user-profile{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.user-profile img{
-    cursor: pointer;
-    border-radius: 50%;
-    border: 4px solid blue;
-}
-.user-profile label{
-    cursor: pointer;
-    font-size: 15px;
-} */
-
 /* ############# Create Post ########### */
 
 .post-div{
