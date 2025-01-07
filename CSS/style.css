@@ -74,6 +74,59 @@ li:hover {
     cursor: pointer;
     font-size: 15px;
 }
+/* ############# Create Post ########### */
+
+.post{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    border: 2px solid #548B54;
+    padding-bottom: 10px;
+}
+.writePost{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+.writePost img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+.writePost input{
+    width: 100%;
+    margin-right: 50px;
+    border: none;
+    border-bottom: 1px solid #548B54;
+    font-size: 25px;
+}
+.postBtn{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    gap: 10px;
+}
+.postBtn input[type=file]{
+    display: none;
+}
+.postBtn button{
+    cursor: pointer;
+    background-color: white;
+    color: #548B54;
+    border: 1px solid #548B54;
+    border-radius: 10px;
+    width: 100px;
+}
+.postBtn button:hover{
+    background-color: #548B54;
+    color: white;
+    border: 1px solid #548B54;
+    border-radius: 10px;
+}
 
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
@@ -124,6 +177,27 @@ li:hover {
     .user-profile label {
         font-size: 14px;
     }
+    .writePost{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 10px;
+    
+    }
+    .writePost img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 50px;
+    }
+    .writePost input{
+        width: 100%;
+        margin-right: 50px;
+        border: none;
+        border-bottom: 1px solid #548B54;
+        font-size: 15px;
+
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -154,6 +228,27 @@ li:hover {
         height: 30px;
         display: none;
     }
+    .writePost{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 10px;
+    
+    }
+    .writePost img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 50px;
+    }
+    .writePost input{
+        width: 100%;
+        margin-right: 50px;
+        border: none;
+        border-bottom: 1px solid #548B54;
+        font-size: 12px;
+
+    }
 }
 
 .master-div{
@@ -162,63 +257,13 @@ li:hover {
     gap: 30px;
 }
 
-/* ############# Create Post ########### */
 
-.post{
-    display:flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 10px;
-    border: 1px solid #548B54;
-    padding-bottom: 10px;
-}
-.writePost{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 10px;
-
-}
-.writePost img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-left: 50px;
-}
-.writePost input{
-    width: 100%;
-    margin-right: 50px;
-    border: none;
-    border-bottom: 1px solid #548B54;
-}
-.postBtn{
-    display: flex;
-    justify-content: end;
-    margin-right: 50px;
-    gap: 10px;
-}
-.postBtn input[type=file]{
-    display: none;
-}
-.postBtn button{
-    cursor: pointer;
-    background-color: white;
-    color: #548B54;
-    border: 1px solid #548B54;
-    border-radius: 10px;
-}
-.postBtn button:hover{
-    background-color: #548B54;
-    color: white;
-    border: 1px solid #548B54;
-    border-radius: 10px;
-}
 
 /* ####### Add and Follow People ###### */
 .people-div{
     display: flex;
-    margin: 5px;
-    border: 2px solid black;
+    margin: 10px;
+    border: 2px solid #548B54;
     justify-content: center;
     align-items: center;
 }
@@ -275,8 +320,9 @@ li:hover {
 .time-line{
     display: flex;
     flex-direction: column;
-    border: 1px solid #548B54;
+    border: 2px solid #548B54;
     gap: 10px;
+    margin: 10px;
 }
 .user-line{
     display: flex;
