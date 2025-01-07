@@ -11,18 +11,148 @@
 /* body{
     background-color: #556B2F;
 } */
+ /* Basic styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #63548b;
+    padding: 5px;
+    position: sticky;
+
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-options {
+    display: flex;
+    align-items: center;
+}
+
+.nav-options a {
+    text-decoration: none;
+    color: black;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid green;
+    transform: border-bottom 0.9s;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile img {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 4px solid blue;
+}
+
+.user-profile label {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Stack the navigation links vertically on small screens */
+    .nav-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .user-profile {
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .user-profile img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .user-profile label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    .nav-options img {
+        width: 40px;
+        height: 40px;
+    }
+
+    ul {
+        gap: 8px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    .user-profile img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 .master-div{
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-nav{
+/* nav{
     display: flex;
     justify-content: space-between;
-    background-color: #548B54;
+    background-color: #63548b;
     padding: 5px;
     position: sticky;
+
     top: 0;
 }
 .nav-options{
@@ -63,7 +193,7 @@ li:hover{
 .user-profile label{
     cursor: pointer;
     font-size: 15px;
-}
+} */
 
 /* ############# Create Post ########### */
 
