@@ -380,6 +380,19 @@ li:hover {
 .inter-btn button:hover{
     background-color: black;
 }
+/* ######## Footer ######## */
+footer{
+    background-color: #548B54;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer img{
+    width: 20px;
+    height: 20px;
+}
 
 
 
