@@ -283,7 +283,6 @@ footer img{
         align-items: center;
     }
 
-    /* Stack the navigation links vertically on small screens */
     .nav-options {
         flex-direction: column;
         align-items: center;
