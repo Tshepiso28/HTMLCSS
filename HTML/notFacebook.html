@@ -10,15 +10,32 @@
 </head>
 <body>
 
-    <nav>
+    <nav class="desktop-nav">
         <div class="nav-options">
             <img src="../RESOURCES/image.png" alt="">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="notFacebook.html">Home</a></li>
+                <li><a href="/HTML/messages.html">Messages</a></li>
+                <li><a href="connections.html">Connections</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
                 <li><a href="../index.html">Sign Out</a></li>
+            </ul>
+        </div>
+        <div class="user-profile">
+            <img src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg" alt="">
+            <label for="">Donald</label>
+
+        </div>
+    </nav>
+    <nav class="mobile-nav">
+        <div class="nav-options">
+            <img src="../RESOURCES/image.png" alt="">
+            <ul>
+                <li><a href="notFacebook.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="/HTML/messages.html"><i class="fa-solid fa-message"></i></a></li>
+                <li><a href="connections.html"><i class="fa-solid fa-user-group"></i></a></li>
+                <li><a href="notifications.html"><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i></a></li>
             </ul>
         </div>
         <div class="user-profile">
@@ -30,7 +47,8 @@
     <div class="post">
         <div class="writePost">
             <img src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg" alt="">
-            <input type="text" name="txtWPost" id="txtWPost" placeholder="Write a Post...">
+            <!-- <input type="text" name="txtWPost" id="txtWPost" placeholder="Write a Post..."> -->
+             <textarea name="txtWPost" id="txtWPost" placeholder="Write a Post..."></textarea>
         </div>
         <div class="postBtn">
             <button>Post</button>
