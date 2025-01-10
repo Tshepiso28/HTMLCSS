@@ -22,6 +22,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ################ NavBar ############### */
@@ -86,8 +90,12 @@ li:hover {
     cursor: pointer;
     font-size: 15px;
 }
+/* ############################## */
 
-
+.msg-div{
+    background-color: red;
+    width: 50%;
+}
 
 
 
