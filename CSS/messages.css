@@ -99,6 +99,8 @@ li:hover {
     width: 450px;
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 .msg-head{
     background-color: #548B54;
@@ -118,10 +120,7 @@ li:hover {
     display: flex;
     flex-direction: column;
 }
-.msg-body{
-    background-color: yellow;
-    margin: 2px;
-}
+
 .msg-foot{
     background-color: white;
     margin: 0px 2px 2px 2px;
@@ -150,6 +149,7 @@ li:hover {
     margin-right: 2px;
     text-align: center;
     font-size: 20px;
+    position: static;
 }
 .msg-foot button:hover{
     background-color: #548B54;
@@ -157,6 +157,30 @@ li:hover {
 .msg-foot .fa-solid:hover{
     cursor: pointer;
     color: white;
+}
+.msg-body{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    max-height: 500px;
+    display: flex;
+    overflow-y: auto;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+.user1{
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+}
+.user2{
+    background-color: slateblue;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
 }
 
 
@@ -254,6 +278,26 @@ li:hover {
         border-bottom: 1px solid #548B54;
         font-size: 15px;
 
+    }
+    .msg-main{
+        margin-top: 1px;
+        background-color: red;
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .msg-body{
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        margin: 2px;
+        max-height: 440px;
+        display: flex;
+        overflow-y: auto;
+        white-space: nowrap;
+        gap: 10px;
     }
 
 }
