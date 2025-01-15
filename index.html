@@ -5,31 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-In</title>
     <link rel="icon" href="../RESOURCES/image.png">
-    <link rel="stylesheet" href="/CSS/signIn.css">
-
+    <link rel="stylesheet" href="../CSS/signIn.css">
 </head>
 <body>
-    
-        <form>
-            <div class="form-content">
-                <img src="/RESOURCES/image.png" alt="logo">
-                <h2>Sign-In</h2>
-                <div class="form-info">
-                    <label for="txtUserName">Email/Username</label>
-                    <input type="text" id="txtUserName" placeholder="Enter Your UserName">
-                    <label for="txtPass">Password</label>
-                    <input type="text" id="txtPass" placeholder="Enter Your Password">
-                    <div class="forgotPass">
-                        <label for=" "><a href=""><i>forgot password</i></a></label>
-                    </div>
-                    <div class="logBtn">
-                        <button><a href="/HTML/notFacebook.html">Sign In </a></button>
-                    </div>
-                    <div class="dontAcc">
-                        <p>Don't have an account? <a href="/HTML/signUp.html"><i>Sign Up</i></a></p>
-                    </div>
+    <form id="signinForm">
+        <div class="form-content">
+            <img src="/RESOURCES/image.png" alt="logo">
+            <h2>Sign-In</h2>
+            <div class="form-info">
+                <label for="txtUserName">Username</label>
+                <input type="text" id="txtUserName" placeholder="Enter Your Username">
+                <span id="usernameError" class="error"></span>
+
+                <label for="txtPass">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="txtPass" placeholder="Enter Your Password">
+                    <button type="button" id="togglePass">Show</button>
+                </div>
+                <span id="passwordError" class="error"></span>
+
+                <div class="logBtn">
+                    <button type="submit">Sign In</button>
+                </div>
+                <div class="dontAcc">
+                    <p>Don't have an account? <a href="/HTML/signUp.html"><i>Sign Up</i></a></p>
                 </div>
             </div>
-        </form>
+        </div>
+    </form>
+
+    <script>
+        const signinForm = document.getElementById('signinForm');
+        const signinUsername = document.getElementById('txtUserName');
+        const signinPassword = document.getElementById('txtPass');
+        
+        const signinUsernameError = document.getElementById('usernameError');
+        const signinPasswordError = document.getElementById('passwordError');
+        
+        signinForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            let isValid = true;
+            
+            // Validate username and password
+            const userData = JSON.parse(localStorage.getItem('userData'));
+            
+            if (signinUsername.value.trim() === '') {
+                signinUsernameError.textContent = 'Username is required.';
+                isValid = false;
+            } else if (signinUsername.value.trim() !== userData?.username) {
+                signinUsernameError.textContent = 'Username not found.';
+                isValid = false;
+            } else {
+                signinUsernameError.textContent = '';
+            }
+            
+            if (signinPassword.value.trim() === '') {
+                signinPasswordError.textContent = 'Password is required.';
+                isValid = false;
+            } else if (signinPassword.value.trim() !== userData?.password) {
+                signinPasswordError.textContent = 'Incorrect password.';
+                isValid = false;
+            } else {
+                signinPasswordError.textContent = '';
+            }
+
+            if (isValid) {
+                alert('Sign-in successful!');
+                // Redirect or keep user logged in (using sessionStorage)
+                sessionStorage.setItem('isLoggedIn', true);
+                window.location.href = 'dashboard.html'; // Redirect to a dashboard page
+            }
+        });
+
+        // Toggle password visibility
+        const toggleVisibility = (input, button) => {
+            button.addEventListener('click', () => {
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    button.textContent = 'Hide';
+                } else {
+                    input.type = 'password';
+                    button.textContent = 'Show';
+                }
+            });
+        };
+
+        toggleVisibility(signinPassword, document.getElementById('togglePass'));
+    </script>
 </body>
 </html>
